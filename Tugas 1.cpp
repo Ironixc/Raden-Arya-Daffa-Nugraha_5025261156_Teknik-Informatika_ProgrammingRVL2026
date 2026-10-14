@@ -7,23 +7,32 @@ class Game
 public:
     string Name;
     int Difficulty;
+    string GameD;
+    
+    Game(string N, int D) : Name(N), Difficulty(D) {
+        if (Difficulty <= 3)
+        {
+            GameD = "Casual";
+        }
+        else if (Difficulty <= 6)
+        {
+            GameD = "Hard";
+        }
+        else
+        {
+            GameD = "Crazy";
+        }
 
-    Game(string N, int D) : Name(N), Difficulty(D) {}
-
-    // void()
-    // {
-
-    // }
+    }
 };
 
 class Player
 {
-protected:
+private:
     string Pname;
     string PAchievement;
     int PRating;
     string Rating;
-    string GameD;
     Game *GamePlayed;
 
 public:
@@ -33,19 +42,7 @@ public:
         PAchievement = PA;
         PRating = PR;
         GamePlayed = G;
-        if (GamePlayed->Difficulty <= 3)
-        {
-            GameD = "Casual";
-        }
-        else if (GamePlayed->Difficulty <= 6)
-        {
-            GameD = "Hard";
-        }
-        else
-        {
-            GameD = "Crazy";
-        }
-
+        
         if (PR <= 3)
         {
             Rating = "LolCow";
@@ -66,23 +63,23 @@ public:
 
     void InfoPlayer()
     {
-        cout << "Player Name: " << Pname << "\nAchievement: " << PAchievement
+        cout             << "\n===========================================\n"
+            << "Player Name: " << Pname << "\nAchievement: " << PAchievement
             << "\nPlayer Rating : " << Rating<< "\nGame Played: " << 
-            GamePlayed->Name << "\nGame Difficulty: " << GameD 
-            << "\n===========================================\n";
+            GamePlayed->Name << "\nGame Difficulty: " << GamePlayed->GameD;
     }
 };
 
 int main()
 {
-    Game* ListGame[2];
+    Game* ListGame[3];
     ListGame[0] = new Game("Minecraft", 3);
     ListGame[1] = new Game("League of Legends", 10);
     ListGame[2] = new Game("BTD 6", 6);
 
-    Player* ListPlayer[5];
+    Player* ListPlayer[6];
     ListPlayer[0] = new Player("Feinberg", "35x All Advancements (AA) world record holder" ,9, ListGame[0]);
-    ListPlayer[1] = new Player("Ludwig", "throw pearl with left mouse click" ,1, ListGame[0]);
+    ListPlayer[1] = new Player("Ludwig", "throw pearl with left mouse click (Cooked)" ,1, ListGame[0]);
     ListPlayer[2] = new Player("kesha", "Average League Player" ,8, ListGame[1]);
     ListPlayer[3] = new Player("Faker", "6x World Champion (back to back to back)" ,10, ListGame[1]);
     ListPlayer[4] = new Player("ISAB", "Married to sauda" ,6, ListGame[2]);
