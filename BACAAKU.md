@@ -1,15 +1,15 @@
 # Tugas_1
-Project OOP tentang Game dan Player dimana.
-Game :\
-Public (Agar data Name dan GameD bisa diambil di method InfoPlayer())\
+Project OOP tentang Game dan Player dimana<br>
+Game :<br>
+Public (Agar data Name dan GameD bisa diambil di method InfoPlayer())<br>
 - Game Name (Name(String))
 - Game Difficulty (Difficulty(int))
 - Game Difficulty (GameD(String))
 
 Cara Mendapatkan GameD dengan Difficulty int memakai if else
 
-Player :\
-Private(Karena Datanya hanya butuh di Player)\
+Player :<br>
+Private(Karena Datanya hanya butuh di Player<br>
 - Player Name (Pname(String))
 - Player Achievement (PAchievement(String))
 - Player Rating (PRating(int))
@@ -18,7 +18,7 @@ Private(Karena Datanya hanya butuh di Player)\
 
 Cara Mendapatkan Rating dengan PRating int memakai if else
 
-Method InfoPlayer() :\
+Method InfoPlayer() :<br>
 - Menampilkan semua data yang sudah di input kecuali int dari Game maupun Player
 
 # Tugas_2
