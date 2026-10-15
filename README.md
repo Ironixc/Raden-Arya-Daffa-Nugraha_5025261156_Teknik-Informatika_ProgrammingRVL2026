@@ -9,7 +9,7 @@ Public (Agar data Name dan GameD bisa diambil di method InfoPlayer())<br>
 Cara Mendapatkan GameD dengan Difficulty int memakai if else
 
 Player :<br>
-Private(Karena Datanya hanya butuh di Player<br>
+Private(Karena Datanya hanya butuh di Player)<br>
 - Player Name (Pname(String))
 - Player Achievement (PAchievement(String))
 - Player Rating (PRating(int))
@@ -22,14 +22,14 @@ Method InfoPlayer() :<br>
 - Menampilkan semua data yang sudah di input kecuali int dari Game maupun Player
 
 # Tugas_2
-Menghitung posisi end effector nya (x,y) dengan
-L1 = 10cm
-L2 = 5 cm
-Θ₁ = 30°
-Θ₂ = 10°
-dengan menggunakan rumus FK
-X = L1 . cos(Θ₁) + L2 . cos(Θ₁ + Θ₂)
-Y = L1 . sin(Θ₁) + L2 . sin(Θ₁ + Θ₂)
+Menghitung posisi end effector nya (x,y) dengan<br>
+L1 = 10cm<br>
+L2 = 5 cm<br>
+Θ₁ = 30°<br>
+Θ₂ = 10°<br>
+dengan menggunakan rumus FK<br>
+X = L1 . cos(Θ₁) + L2 . cos(Θ₁ + Θ₂)<br>
+Y = L1 . sin(Θ₁) + L2 . sin(Θ₁ + Θ₂)<br>
 
 # Tugas_3
 Mengkonversi rumus FK menjadi program c++
